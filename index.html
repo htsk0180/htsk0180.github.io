@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halil_Eroğlu</title>
+    <title>Halil Eroğlu - CV</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional: Font Awesome for icons -->
+    <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
@@ -16,7 +16,7 @@
             font-family: 'Arial', sans-serif;
         }
         .cv-container {
-            background-color: rgba(0, 0, 0, 0.75); /* Arka planın saydamlığı */
+            background-color: rgba(0, 0, 0, 0.75);
             padding: 20px;
             border-radius: 15px;
             max-width: 800px;
@@ -52,6 +52,11 @@
         ul li {
             margin-bottom: 10px;
         }
+        .social-links a {
+            color: #ffcb05;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
         footer p {
             margin-top: 40px;
         }
@@ -61,15 +66,21 @@
     <div class="container mt-5">
         <div class="cv-container text-center">
             <!-- Profile Section -->
-            <!-- <img src="profile.jpg" alt="Profile Image" class="profile-image"> -->
             <h1>Halil Eroğlu</h1>
             <p class="lead">Yazılım Mühendisi</p>
 
+            <!-- Social Media Links -->
+            <div class="social-links my-3">
+                <a href="https://github.com/kullaniciadi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0000-0000-0000-0000" target="_blank"><i class="fab fa-orcid"></i></a>
+                <a href="https://www.linkedin.com/in/kullaniciadi" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
             <!-- Contact Information -->
             <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">siriusit2015@gmail.com</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:siriusit2015@gmail.com">siriusit2015@gmail.com</a></p>
                 <p><i class="fas fa-phone"></i> +90 xxx xx xx</p>
-                <p><i class="fas fa-map-marker-alt"></i> [Eskişehir, Türkiye]</p>
+                <p><i class="fas fa-map-marker-alt"></i> Eskişehir, Türkiye</p>
             </div>
 
             <!-- About Me Section -->
@@ -97,7 +108,6 @@
                     <p><strong>Full Stack .Net Developer</strong> | 2017-Halen</p>
                     <p>Şirket ve farklı bakanlık projelerinde geliştirme ve destek sağlıyorum.</p>
                 </div>
-                <!-- Daha fazla deneyim eklemek isterseniz, yukarıdaki div'i kopyalayabilirsiniz -->
             </div>
 
             <!-- Education Section -->
@@ -117,8 +127,23 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies (optional) -->
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <!-- jQuery for interactive elements -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Interactive features using jQuery
+        $(document).ready(function() {
+            // Example: Click event to show an alert or open a modal
+            $('.social-links a').on('click', function(e) {
+                e.preventDefault();
+                let link = $(this).attr('href');
+                window.open(link, '_blank');
+            });
+
+            // Add more interactivity as needed, e.g., modals, tooltips, etc.
+        });
+    </script>
 </body>
 </html>
