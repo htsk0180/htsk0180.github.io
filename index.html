@@ -10,89 +10,111 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
             font-family: 'Arial', sans-serif;
+        }
+        .cv-container {
+            background-color: rgba(0, 0, 0, 0.75); /* Arka planın saydamlığı */
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
         .profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            margin-bottom: 20px;
         }
         .section-title {
             font-size: 1.5rem;
             font-weight: 600;
             margin-top: 30px;
             margin-bottom: 20px;
-            color: #333;
+            color: #ffcb05;
+            border-bottom: 2px solid #ffcb05;
+            padding-bottom: 5px;
         }
         .contact-info {
             margin-top: 20px;
         }
         .contact-info a {
             text-decoration: none;
-            color: #007bff;
+            color: #ffcb05;
+        }
+        .contact-info p i {
+            margin-right: 10px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer p {
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <div class="container mt-5">
-        <!-- Profile Section -->
-        <div class="text-center">
+        <div class="cv-container text-center">
+            <!-- Profile Section -->
             <img src="profile.jpg" alt="Profile Image" class="profile-image">
-            <h1 class="mt-3">[Adınız Soyadınız]</h1>
+            <h1>[Adınız Soyadınız]</h1>
             <p class="lead">[Mesleğiniz veya Pozisyonunuz]</p>
-        </div>
 
-        <!-- Contact Information -->
-        <div class="contact-info text-center">
-            <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a></p>
-            <p><i class="fas fa-phone"></i> +90 123 456 7890</p>
-            <p><i class="fas fa-map-marker-alt"></i> [Şehir, Ülke]</p>
-        </div>
-
-        <!-- About Me Section -->
-        <div class="mt-5">
-            <h2 class="section-title">Hakkımda</h2>
-            <p>[Kendiniz hakkında kısa bir açıklama yazın. Deneyimlerinizi, ilgi alanlarınızı ve hedeflerinizi buraya ekleyebilirsiniz.]</p>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="mt-5">
-            <h2 class="section-title">Yetenekler</h2>
-            <ul class="list-unstyled">
-                <li><i class="fas fa-check-circle"></i> [Yetenek 1]</li>
-                <li><i class="fas fa-check-circle"></i> [Yetenek 2]</li>
-                <li><i class="fas fa-check-circle"></i> [Yetenek 3]</li>
-                <li><i class="fas fa-check-circle"></i> [Yetenek 4]</li>
-            </ul>
-        </div>
-
-        <!-- Experience Section -->
-        <div class="mt-5">
-            <h2 class="section-title">Deneyim</h2>
-            <div class="mb-4">
-                <h3>[İş Yeri Adı]</h3>
-                <p><strong>[Pozisyon Adı]</strong> | [Çalışma Tarihleri]</p>
-                <p>[Bu pozisyonda yaptığınız işler ve sorumluluklar hakkında kısa bir açıklama yapın.]</p>
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a></p>
+                <p><i class="fas fa-phone"></i> +90 123 456 7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> [Şehir, Ülke]</p>
             </div>
-            <!-- Daha fazla deneyim eklemek isterseniz, yukarıdaki div'i kopyalayabilirsiniz -->
-        </div>
 
-        <!-- Education Section -->
-        <div class="mt-5">
-            <h2 class="section-title">Eğitim</h2>
-            <div class="mb-4">
-                <h3>[Okul Adı]</h3>
-                <p><strong>[Derece veya Diploma Adı]</strong> | [Eğitim Tarihleri]</p>
-                <p>[Bu bölümde eğitim hayatınızdan bahsedebilirsiniz.]</p>
+            <!-- About Me Section -->
+            <div class="mt-5 text-start">
+                <h2 class="section-title">Hakkımda</h2>
+                <p>[Kendiniz hakkında kısa bir açıklama yazın. Deneyimlerinizi, ilgi alanlarınızı ve hedeflerinizi buraya ekleyebilirsiniz.]</p>
             </div>
-        </div>
 
-        <!-- Footer -->
-        <footer class="text-center mt-5">
-            <p>&copy; [Yıl] [Adınız Soyadınız]. Tüm hakları saklıdır.</p>
-        </footer>
+            <!-- Skills Section -->
+            <div class="mt-5 text-start">
+                <h2 class="section-title">Yetenekler</h2>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle"></i> [Yetenek 1]</li>
+                    <li><i class="fas fa-check-circle"></i> [Yetenek 2]</li>
+                    <li><i class="fas fa-check-circle"></i> [Yetenek 3]</li>
+                    <li><i class="fas fa-check-circle"></i> [Yetenek 4]</li>
+                </ul>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="mt-5 text-start">
+                <h2 class="section-title">Deneyim</h2>
+                <div class="mb-4">
+                    <h3>[İş Yeri Adı]</h3>
+                    <p><strong>[Pozisyon Adı]</strong> | [Çalışma Tarihleri]</p>
+                    <p>[Bu pozisyonda yaptığınız işler ve sorumluluklar hakkında kısa bir açıklama yapın.]</p>
+                </div>
+                <!-- Daha fazla deneyim eklemek isterseniz, yukarıdaki div'i kopyalayabilirsiniz -->
+            </div>
+
+            <!-- Education Section -->
+            <div class="mt-5 text-start">
+                <h2 class="section-title">Eğitim</h2>
+                <div class="mb-4">
+                    <h3>[Okul Adı]</h3>
+                    <p><strong>[Derece veya Diploma Adı]</strong> | [Eğitim Tarihleri]</p>
+                    <p>[Bu bölümde eğitim hayatınızdan bahsedebilirsiniz.]</p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="text-center">
+                <p>&copy; [Yıl] [Adınız Soyadınız]. Tüm hakları saklıdır.</p>
+            </footer>
+        </div>
     </div>
 
     <!-- Bootstrap JS and dependencies (optional) -->
