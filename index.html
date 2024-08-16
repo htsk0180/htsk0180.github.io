@@ -3,10 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim HTML Sayfam</title>
+    <title>Benim CV'm</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Merhaba, Dünya.!</h1>
-    <p>Benim ilk HTML sayfam.</p>
+    <div class="container mt-5">
+        <!-- Profile Section -->
+        <div class="text-center">
+            <img src="profile.jpg" alt="Profile Image" class="profile-image">
+            <h1 class="mt-3">[Adınız Soyadınız]</h1>
+            <p class="lead">[Mesleğiniz veya Pozisyonunuz]</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info text-center">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a></p>
+            <p><i class="fas fa-phone"></i> +90 123 456 7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> [Şehir, Ülke]</p>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="mt-5">
+            <h2 class="section-title">Hakkımda</h2>
+            <p>[Kendiniz hakkında kısa bir açıklama yazın. Deneyimlerinizi, ilgi alanlarınızı ve hedeflerinizi buraya ekleyebilirsiniz.]</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="mt-5">
+            <h2 class="section-title">Yetenekler</h2>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle"></i> [Yetenek 1]</li>
+                <li><i class="fas fa-check-circle"></i> [Yetenek 2]</li>
+                <li><i class="fas fa-check-circle"></i> [Yetenek 3]</li>
+                <li><i class="fas fa-check-circle"></i> [Yetenek 4]</li>
+            </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="mt-5">
+            <h2 class="section-title">Deneyim</h2>
+            <div class="mb-4">
+                <h3>[İş Yeri Adı]</h3>
+                <p><strong>[Pozisyon Adı]</strong> | [Çalışma Tarihleri]</p>
+                <p>[Bu pozisyonda yaptığınız işler ve sorumluluklar hakkında kısa bir açıklama yapın.]</p>
+            </div>
+            <!-- Daha fazla deneyim eklemek isterseniz, yukarıdaki div'i kopyalayabilirsiniz -->
+        </div>
+
+        <!-- Education Section -->
+        <div class="mt-5">
+            <h2 class="section-title">Eğitim</h2>
+            <div class="mb-4">
+                <h3>[Okul Adı]</h3>
+                <p><strong>[Derece veya Diploma Adı]</strong> | [Eğitim Tarihleri]</p>
+                <p>[Bu bölümde eğitim hayatınızdan bahsedebilirsiniz.]</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-5">
+            <p>&copy; [Yıl] [Adınız Soyadınız]. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
