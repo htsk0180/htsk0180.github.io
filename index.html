@@ -349,11 +349,11 @@
             }
         }
 
-        /* Scroll Animations - Optimized */
+        /* Scroll Animations - Simplified for immediate visibility */
         .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease;
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.3s ease;
         }
 
         .fade-in.visible {
@@ -361,11 +361,11 @@
             transform: translateY(0);
         }
 
-        /* Immediate visibility for key sections */
-        .fade-in.immediate {
-            opacity: 1;
-            transform: translateY(0);
-            animation: fadeInUp 0.8s ease-out;
+        /* Optional subtle animation for new content only */
+        .fade-in.animate-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
         }
     </style>
 </head>
@@ -563,75 +563,33 @@
     
     <!-- Custom JavaScript -->
     <script>
-        // Faster Loading Animation
+        // Fast Loading Animation
         window.addEventListener('load', function() {
             setTimeout(() => {
                 document.getElementById('loading').style.opacity = '0';
                 setTimeout(() => {
                     document.getElementById('loading').style.display = 'none';
-                    // Immediate show critical sections
-                    showCriticalSections();
-                }, 300);
-            }, 500); // Reduced from 1000ms
+                }, 200);
+            }, 300); // Much faster loading
         });
 
-        // Show critical sections immediately
-        function showCriticalSections() {
-            const criticalSections = document.querySelectorAll('.fade-in');
-            criticalSections.forEach((element, index) => {
-                // Show first 3 sections immediately
-                if (index < 3) {
-                    element.classList.add('immediate');
-                } else {
-                    // Show others with a slight delay
-                    setTimeout(() => {
-                        element.classList.add('visible');
-                    }, index * 100);
-                }
-            });
-        }
-
-        // Optimized Particle Animation - Less frequent
+        // Minimal Particle Animation
         function createParticle() {
             const particle = document.createElement('div');
             particle.className = 'particle';
             particle.style.left = Math.random() * 100 + 'vw';
-            particle.style.width = particle.style.height = Math.random() * 3 + 1 + 'px';
-            particle.style.animationDuration = Math.random() * 4 + 3 + 's';
+            particle.style.width = particle.style.height = Math.random() * 2 + 1 + 'px';
+            particle.style.animationDuration = Math.random() * 5 + 4 + 's';
             particle.style.animationDelay = Math.random() * 1 + 's';
             document.getElementById('particles').appendChild(particle);
 
             setTimeout(() => {
                 particle.remove();
-            }, 7000);
+            }, 9000);
         }
 
-        // Reduced particle frequency
-        setInterval(createParticle, 800); // Increased from 300ms
-
-        // Optimized Scroll Animation with Intersection Observer
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Stop observing once visible
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements when DOM is ready
-        document.addEventListener('DOMContentLoaded', function() {
-            // Only observe sections that aren't immediately visible
-            setTimeout(() => {
-                const fadeElements = document.querySelectorAll('.fade-in:not(.immediate)');
-                fadeElements.forEach(el => observer.observe(el));
-            }, 1000);
-        });
+        // Very reduced particle frequency
+        setInterval(createParticle, 1500);
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -647,8 +605,8 @@
             });
         });
 
-        // Faster typing effect for the title
-        function typeWriter(element, text, speed = 60) {
+        // Fast typing effect for the title
+        function typeWriter(element, text, speed = 50) {
             let i = 0;
             element.innerHTML = '';
             function type() {
@@ -661,15 +619,15 @@
             type();
         }
 
-        // Initialize typing effect faster
+        // Initialize typing effect immediately after load
         window.addEventListener('load', function() {
             setTimeout(() => {
                 const titleElement = document.querySelector('h1');
                 if (titleElement) {
                     const originalText = titleElement.textContent;
-                    typeWriter(titleElement, originalText, 60); // Faster typing
+                    typeWriter(titleElement, originalText, 50);
                 }
-            }, 800); // Reduced delay
+            }, 400);
         });
 
         // Preload critical resources
