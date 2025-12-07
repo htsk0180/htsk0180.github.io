@@ -1,179 +1,270 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #00c6ff;
+    --secondary-color: #0072ff;
+    --background-color: #0a192f;
+    --card-background-color: rgba(10, 25, 47, 0.85);
+    --text-color: #c8d6e5;
+    --heading-color: #e2e8f0;
+    --border-color: rgba(0, 198, 255, 0.2);
+}
 
 body {
-    background: url('https://static.vecteezy.com/system/resources/previews/072/310/925/non_2x/futuristic-hud-interface-circles-on-dark-blue-background-technology-background-photo.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #e0e0e0;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
+    overflow-x: hidden;
 }
 
-.cv-container {
-    background-color: rgba(10, 25, 47, 0.85);
-    padding: 40px;
-    border-radius: 20px;
-    max-width: 900px;
-    margin: 50px auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+/* --- Animations & Preloader --- */
+.loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
 }
 
-.profile-image {
-    width: 150px;
-    height: 150px;
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: var(--primary-color);
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 25px;
-    border: 3px solid #00ffff;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
 }
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 0.8s ease-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Particle Background --- */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-100px) translateX(50px);
+    }
+}
+
+
+/* --- Main Container --- */
+.cv-container {
+    background-color: var(--card-background-color);
+    padding: 50px;
+    border-radius: 15px;
+    max-width: 950px;
+    margin: 50px auto;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+/* --- Header & Profile --- */
 h1 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 10px;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 
 .lead {
-    font-size: 1.4rem;
-    color: #00ffff;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 300;
 }
 
-.section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 25px;
-    color: #00ffff;
-    text-align: left;
-    border-bottom: 2px solid #00ffff;
-    padding-bottom: 10px;
-    display: inline-block;
-}
-
+/* --- Contact Info --- */
 .contact-info {
-    margin-top: 25px;
-    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 0;
 }
 
-.contact-info p {
-    margin-bottom: 10px;
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
 }
 
-.contact-info a {
+.contact-item i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.contact-item a {
+    color: var(--text-color);
     text-decoration: none;
-    color: #00ffff;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
-.contact-info a:hover {
-    color: #ffffff;
+.contact-item a:hover {
+    color: var(--primary-color);
 }
 
-.contact-info p i {
-    margin-right: 15px;
-    color: #00ffff;
+
+/* --- Section Styling --- */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+    text-align: left;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 .text-start {
     text-align: left !important;
 }
 
+/* --- Skills --- */
 ul.list-unstyled {
     padding-left: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
 }
 
 ul.list-unstyled li {
-    background-color: rgba(0, 255, 255, 0.1);
-    border-radius: 5px;
-    padding: 10px 15px;
+    background-color: rgba(0, 198, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 18px;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 ul.list-unstyled li:hover {
-    background-color: rgba(0, 255, 255, 0.2);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    background-color: rgba(0, 198, 255, 0.1);
 }
 
 ul.list-unstyled li i {
-    color: #00ffff;
-    margin-right: 10px;
+    color: var(--primary-color);
+    margin-right: 12px;
 }
 
-.experience-item, .education-item {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border-left: 4px solid #00ffff;
-    transition: background-color 0.3s ease;
+/* --- Experience & Projects --- */
+.experience-item {
+    background: transparent;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s;
 }
 
-.experience-item:hover, .education-item:hover {
-    background: rgba(255, 255, 255, 0.1);
+.experience-item:last-child {
+    border-bottom: none;
 }
 
-.experience-item h3, .education-item h3 {
-    color: #ffffff;
-    font-weight: 600;
+.experience-item h3 {
+    color: var(--heading-color);
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
-.experience-item p, .education-item p {
-    margin-bottom: 5px;
+.experience-item p {
+    margin-bottom: 0.25rem;
 }
 
+.experience-item strong {
+    color: var(--primary-color);
+}
+
+/* --- Education --- */
+.education-item {
+     padding-top: 1.5rem;
+}
+
+/* --- Footer --- */
 footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(0, 255, 255, 0.2);
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-text {
     font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: #00ffff;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
 }
 
 .social-links a {
-    color: #00ffff;
-    margin: 0 15px;
-    font-size: 1.8rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    color: var(--text-color);
+    margin: 0 1rem;
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-links a:hover {
-    color: #ffffff;
-    transform: translateY(-5px);
+    color: var(--primary-color);
+    transform: scale(1.2);
 }
 
 footer p {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #a0a0a0;
-}
-
-/* Animations */
-.cv-container > div, .cv-container > footer {
-    animation: fadeIn 1s ease-out;
-    animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #8892b0;
 }
