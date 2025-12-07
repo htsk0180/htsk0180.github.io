@@ -4,38 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halil Eroğlu | Full Stack .NET Developer</title>
+    <title>Halil Eroğlu | Software Specialist & Team Lead</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Halil Eroğlu - Experienced Software Specialist & Team Lead specializing in .NET, ERP systems, and digital transformation projects.">
+    <meta name="keywords" content="Halil Eroğlu, Software Developer, .NET Developer, Team Lead, ERP, Digital Transformation, C#, ASP.NET">
+    <meta name="author" content="Halil Eroğlu">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Halil Eroğlu | Software Specialist & Team Lead">
+    <meta property="og:description" content="Experienced Software Specialist & Team Lead specializing in .NET, ERP systems, and digital transformation projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://htsk0180.github.io">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url('your-technological-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+        }
+
+        .cv-container {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #00ffff;
+            border-bottom: 2px solid #00ffff;
+            padding-bottom: 5px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #00ffff;
+        }
+
+        .contact-info p i {
+            margin-right: 10px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        .social-links a {
+            color: #00ffff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer-text {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #00ffff;
+        }
+
+    </style>
 </head>
 
 <body>
+    <!-- Loading Animation -->
+    <div class="loading-spinner" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
     <div class="container mt-5">
-        <div class="cv-container text-center">
+        <div class="cv-container">
             <!-- Profile Section -->
-            <div>
-                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-image">
-                <h1>Halil Eroğlu</h1>
-                <p class="lead">Full Stack .NET Developer</p>
-            </div>
+            <h1>Halil Eroğlu</h1>
+            <p class="lead">Full Stack .NET Developer</p>
 
             <!-- Contact Information -->
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:siriusit2015@gmail.com">siriusit2015@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> +90 xxx xx xx</p>
-                <p><i class="fas fa-map-marker-alt"></i> Eskişehir, Türkiye</p>
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:siriusit2015@gmail.com">siriusit2015@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+90 xxx xx xx</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Eskişehir, Türkiye</span>
+                </div>
             </div>
 
             <!-- About Me Section -->
-            <div class="mt-5 text-start">
+            <div class="mt-5 text-start fade-in">
                 <h2 class="section-title">About Me</h2>
-                <p>I am a Full Stack .NET Developer with extensive experience in both frontend and backend development. I specialize in developing robust, scalable applications using the latest .NET technologies. My expertise includes C#, C++, Python, and I am well-versed in OOP, design patterns, and N-Tier architecture. I am now expanding my expertise into Agentic AI and IoT, leading digital transformation projects and creating innovative automation solutions for ERP systems. I have hands-on experience with MES/MOM projects, utilizing machine data for digital monitoring and optimization.</p>
+                <p>I am a Full Stack .NET Developer with extensive experience in both frontend and backend development. I specialize in developing robust, scalable applications using the latest .NET technologies. My expertise includes C#, C++, Python, and I am well-versed in OOP, design patterns, and N-Tier architecture.</p>
             </div>
 
             <!-- Skills Section -->
@@ -44,48 +135,47 @@
                 <ul class="list-unstyled">
                     <li><i class="fas fa-check-circle"></i> .NET Framework & .NET Core</li>
                     <li><i class="fas fa-check-circle"></i> C# & ASP.NET</li>
+                    <li><i class="fas fa-check-circle"></i> C++</li>
                     <li><i class="fas fa-check-circle"></i> Python</li>
-                    <li><i class="fas fa-check-circle"></i> Agentic AI (LangChain, LangGraph)</li>
-                    <li><i class="fas fa-check-circle"></i> n8n Automation</li>
-                    <li><i class="fas fa-check-circle"></i> IoT (MQTT, OPC UA)</li>
-                    <li><i class="fas fa-check-circle"></i> MES/MOM Systems</li>
-                    <li><i class="fas fa-check-circle"></i> Digital Transformation</li>
                     <li><i class="fas fa-check-circle"></i> JavaScript & jQuery</li>
                     <li><i class="fas fa-check-circle"></i> HTML, CSS & Bootstrap</li>
                     <li><i class="fas fa-check-circle"></i> OOP & Design Patterns</li>
                     <li><i class="fas fa-check-circle"></i> N-Tier Architecture</li>
                     <li><i class="fas fa-check-circle"></i> Database Management (SQL Server, MySQL)</li>
-                    <li><i class="fas fa-check-circle"></i> ASP.NET Core & Entity Framework Core</li>
+                    <li><i class="fas fa-check-circle"></i> ASP.NET Core</li>
+                    <li><i class="fas fa-check-circle"></i> Entity Framework Core</li>
                     <li><i class="fas fa-check-circle"></i> Blazor</li>
-                    <li><i class="fas fa-check-circle"></i> Azure & Docker</li>
+                    <li><i class="fas fa-check-circle"></i> Azure</li>
+                    <li><i class="fas fa-check-circle"></i> Docker & Kubernetes</li>
                     <li><i class="fas fa-check-circle"></i> Microservices Architecture</li>
                     <li><i class="fas fa-check-circle"></i> RESTful API & GraphQL</li>
                     <li><i class="fas fa-check-circle"></i> React, Angular & Vue.js</li>
-                    <li><i class="fas fa-check-circle"></i> DevOps & CI/CD</li>
+                    <li><i class="fas fa-check-circle"></i> DevOps Practices (CI/CD, Jenkins, GitHub Actions)</li>
+                    <li><i class="fas fa-check-circle"></i> Unit Testing & Test Automation (xUnit, NUnit, Selenium)</li>
                     <li><i class="fas fa-check-circle"></i> Git</li>
                     <li><i class="fas fa-check-circle"></i> Agile Methodologies (Scrum, Kanban)</li>
+                    <li><i class="fas fa-check-circle"></i> Security Best Practices (OWASP)</li>
                 </ul>
             </div>
 
             <!-- Experience Section -->
             <div class="mt-5 text-start">
                 <h2 class="section-title">Experience</h2>
-                <div class="experience-item">
+                <div class="mb-4">
                     <h3>Pusula CX</h3>
                     <p><strong>Full Stack .NET Developer</strong> | 2018-Present</p>
                     <p>Providing development and support across various projects for both corporate clients and government institutions. My role involves implementing full-stack solutions, optimizing code performance, and ensuring the seamless integration of frontend and backend technologies.</p>
                 </div>
-                <div class="experience-item">
+                <div class="mb-4">
                     <h3>Mtn Group</h3>
                     <p><strong>Full Stack .NET Developer</strong> | 2016-2018</p>
                     <p>It provides various development and support in the fields of e-Invoice, e-Archive and e-Transformation for corporate customers. My role includes listening to full-stack solutions, optimizing code units, and ensuring seamless integration of front-end and back-end technologies.</p>
                 </div>
-                <div class="experience-item">
+                <div class="mb-4">
                     <h3>Microsoft</h3>
                     <p><strong>Software Engineering Intern</strong> | 2013-2013</p>
                     <p>Windows 8 Store App Development</p>
                 </div>
-                <!-- Add more experience if needed -->
             </div>
 
             <!-- Projects Section -->
@@ -106,9 +196,9 @@
             </div>
 
             <!-- Education Section -->
-            <div class="mt-5 text-start">
+            <div class="mt-5 text-start fade-in">
                 <h2 class="section-title">Education</h2>
-                <div class="education-item">
+                <div class="mb-4">
                     <h3>Fırat University</h3>
                     <p><strong>BSc in Software Engineering</strong> | 2011-2016</p>
                     <p>Specialized in Software Engineering, Data Science, and Information Security.</p>
@@ -116,22 +206,112 @@
             </div>
 
             <!-- Footer -->
-            <footer class="text-center">
+            <footer class="text-center fade-in">
                 <div class="footer-text">Connect with me on:</div>
-                <div class="social-links mb-3">
-                    <a href="https://github.com/htsk0180/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://orcid.org/0009-0008-8576-2771" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-                    <a href="https://tr.linkedin.com/in/htsk1920" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://independent.academia.edu/SIRIUSinformationtechnology" target="_blank" aria-label="Academia"><i class="fas fa-graduation-cap"></i></a>
+                <div class="social-links">
+                    <a href="https://github.com/htsk0180/" target="_blank" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://orcid.org/0009-0008-8576-2771" target="_blank" aria-label="ORCID" title="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+                    <a href="https://tr.linkedin.com/in/htsk1920" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://independent.academia.edu/SIRIUSinformationtechnology" target="_blank" aria-label="Academia" title="Academia">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
                 </div>
-                <p>&copy; 2024 - Halil Eroğlu. All rights reserved.</p>
+                <p>&copy; 2025 - Halil Eroğlu. All rights reserved.</p>
             </footer>
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies (optional) -->
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Fast Loading Animation
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.getElementById('loading').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loading').style.display = 'none';
+                }, 200);
+            }, 300); // Much faster loading
+        });
+
+        // Minimal Particle Animation
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.width = particle.style.height = Math.random() * 2 + 1 + 'px';
+            particle.style.animationDuration = Math.random() * 5 + 4 + 's';
+            particle.style.animationDelay = Math.random() * 1 + 's';
+            document.getElementById('particles').appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, 9000);
+        }
+
+        // Very reduced particle frequency
+        setInterval(createParticle, 1500);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fast typing effect for the title
+        function typeWriter(element, text, speed = 50) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect immediately after load
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const titleElement = document.querySelector('h1');
+                if (titleElement) {
+                    const originalText = titleElement.textContent;
+                    typeWriter(titleElement, originalText, 50);
+                }
+            }, 400);
+        });
+
+        // Preload critical resources
+        function preloadResources() {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'style';
+            link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
+            document.head.appendChild(link);
+        }
+
+        // Call preload on DOM ready
+        document.addEventListener('DOMContentLoaded', preloadResources);
+    </script>
 </body>
 
 </html>
