@@ -9,86 +9,21 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: url('your-technological-background-image.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            font-size: 14px;
-        }
-
-        .cv-container {
-            background-color: rgba(0, 0, 0, 0.85);
-            padding: 25px;
-            border-radius: 15px;
-            max-width: 800px;
-            margin: auto;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-        }
-
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .section-title {
-            font-size: 1.7rem;
-            font-weight: 600;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            color: #00ffff;
-            border-bottom: 2px solid #00ffff;
-            padding-bottom: 5px;
-        }
-
-        .contact-info {
-            margin-top: 20px;
-        }
-
-        .contact-info a {
-            text-decoration: none;
-            color: #00ffff;
-        }
-
-        .contact-info p i {
-            margin-right: 10px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        footer p {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-
-        .social-links a {
-            color: #00ffff;
-            margin: 0 10px;
-            font-size: 1.5rem;
-        }
-
-        .footer-text {
-            font-size: 1rem;
-            margin-bottom: 10px;
-            color: #00ffff;
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container mt-5">
         <div class="cv-container text-center">
             <!-- Profile Section -->
-            <h1>Halil Eroğlu</h1>
-            <p class="lead">Full Stack .NET Developer</p>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-image">
+                <h1>Halil Eroğlu</h1>
+                <p class="lead">Full Stack .NET Developer</p>
+            </div>
 
             <!-- Contact Information -->
             <div class="contact-info">
@@ -97,18 +32,10 @@
                 <p><i class="fas fa-map-marker-alt"></i> Eskişehir, Türkiye</p>
             </div>
 
-            <!-- Social Links -->
-            <!-- <div class="social-links mt-4">
-                <a href="https://github.com/htsk0180/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://orcid.org/0009-0008-8576-2771" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-                <a href="https://tr.linkedin.com/in/htsk1920" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://independent.academia.edu/SIRIUSinformationtechnology" target="_blank" aria-label="Academia"><i class="fas fa-graduation-cap"></i></a>
-            </div> -->
-
             <!-- About Me Section -->
             <div class="mt-5 text-start">
                 <h2 class="section-title">About Me</h2>
-                <p>I am a Full Stack .NET Developer with extensive experience in both frontend and backend development. I specialize in developing robust, scalable applications using the latest .NET technologies. My expertise includes C#, C++, Python, and I am well-versed in OOP, design patterns, and N-Tier architecture.</p>
+                <p>I am a Full Stack .NET Developer with extensive experience in both frontend and backend development. I specialize in developing robust, scalable applications using the latest .NET technologies. My expertise includes C#, C++, Python, and I am well-versed in OOP, design patterns, and N-Tier architecture. I am now expanding my expertise into Agentic AI and IoT, leading digital transformation projects and creating innovative automation solutions for ERP systems. I have hands-on experience with MES/MOM projects, utilizing machine data for digital monitoring and optimization.</p>
             </div>
 
             <!-- Skills Section -->
@@ -117,43 +44,43 @@
                 <ul class="list-unstyled">
                     <li><i class="fas fa-check-circle"></i> .NET Framework & .NET Core</li>
                     <li><i class="fas fa-check-circle"></i> C# & ASP.NET</li>
-                    <li><i class="fas fa-check-circle"></i> C++</li>
                     <li><i class="fas fa-check-circle"></i> Python</li>
+                    <li><i class="fas fa-check-circle"></i> Agentic AI (LangChain, LangGraph)</li>
+                    <li><i class="fas fa-check-circle"></i> n8n Automation</li>
+                    <li><i class="fas fa-check-circle"></i> IoT (MQTT, OPC UA)</li>
+                    <li><i class="fas fa-check-circle"></i> MES/MOM Systems</li>
+                    <li><i class="fas fa-check-circle"></i> Digital Transformation</li>
                     <li><i class="fas fa-check-circle"></i> JavaScript & jQuery</li>
                     <li><i class="fas fa-check-circle"></i> HTML, CSS & Bootstrap</li>
                     <li><i class="fas fa-check-circle"></i> OOP & Design Patterns</li>
                     <li><i class="fas fa-check-circle"></i> N-Tier Architecture</li>
                     <li><i class="fas fa-check-circle"></i> Database Management (SQL Server, MySQL)</li>
-                    <li><i class="fas fa-check-circle"></i> ASP.NET Core</li>
-                    <li><i class="fas fa-check-circle"></i> Entity Framework Core</li>
+                    <li><i class="fas fa-check-circle"></i> ASP.NET Core & Entity Framework Core</li>
                     <li><i class="fas fa-check-circle"></i> Blazor</li>
-                    <li><i class="fas fa-check-circle"></i> Azure</li>
-                    <li><i class="fas fa-check-circle"></i> Docker & Kubernetes</li>
+                    <li><i class="fas fa-check-circle"></i> Azure & Docker</li>
                     <li><i class="fas fa-check-circle"></i> Microservices Architecture</li>
                     <li><i class="fas fa-check-circle"></i> RESTful API & GraphQL</li>
                     <li><i class="fas fa-check-circle"></i> React, Angular & Vue.js</li>
-                    <li><i class="fas fa-check-circle"></i> DevOps Practices (CI/CD, Jenkins, GitHub Actions)</li>
-                    <li><i class="fas fa-check-circle"></i> Unit Testing & Test Automation (xUnit, NUnit, Selenium)</li>
+                    <li><i class="fas fa-check-circle"></i> DevOps & CI/CD</li>
                     <li><i class="fas fa-check-circle"></i> Git</li>
                     <li><i class="fas fa-check-circle"></i> Agile Methodologies (Scrum, Kanban)</li>
-                    <li><i class="fas fa-check-circle"></i> Security Best Practices (OWASP)</li>
                 </ul>
             </div>
 
             <!-- Experience Section -->
             <div class="mt-5 text-start">
                 <h2 class="section-title">Experience</h2>
-                <div class="mb-4">
+                <div class="experience-item">
                     <h3>Pusula CX</h3>
                     <p><strong>Full Stack .NET Developer</strong> | 2018-Present</p>
                     <p>Providing development and support across various projects for both corporate clients and government institutions. My role involves implementing full-stack solutions, optimizing code performance, and ensuring the seamless integration of frontend and backend technologies.</p>
                 </div>
-                <div class="mb-4">
+                <div class="experience-item">
                     <h3>Mtn Group</h3>
                     <p><strong>Full Stack .NET Developer</strong> | 2016-2018</p>
                     <p>It provides various development and support in the fields of e-Invoice, e-Archive and e-Transformation for corporate customers. My role includes listening to full-stack solutions, optimizing code units, and ensuring seamless integration of front-end and back-end technologies.</p>
                 </div>
-                <div class="mb-4">
+                <div class="experience-item">
                     <h3>Microsoft</h3>
                     <p><strong>Software Engineering Intern</strong> | 2013-2013</p>
                     <p>Windows 8 Store App Development</p>
@@ -161,10 +88,27 @@
                 <!-- Add more experience if needed -->
             </div>
 
+            <!-- Projects Section -->
+            <div class="mt-5 text-start">
+                <h2 class="section-title">Recent Projects</h2>
+                <div class="experience-item">
+                    <h3>ERP Automation with Agentic AI</h3>
+                    <p>Developed and implemented automation projects for ERP systems by leveraging Agentic AI tools like LangChain, LangSmith, and LangGraph, along with platforms such as n8n. These solutions streamlined complex workflows and significantly improved operational efficiency.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Digital Transformation Leadership</h3>
+                    <p>Led and developed key digital transformation initiatives, architecting new systems and processes to modernize legacy operations. Focused on creating scalable, resilient, and intelligent solutions to drive business growth.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>IoT & MES/MOM Integration</h3>
+                    <p>Specialized in integrating IoT devices in industrial environments using protocols like MQTT and OPC UA. Utilized data collected from machinery for real-time digital monitoring and analysis within Manufacturing Execution Systems (MES) and Manufacturing Operations Management (MOM) projects.</p>
+                </div>
+            </div>
+
             <!-- Education Section -->
             <div class="mt-5 text-start">
                 <h2 class="section-title">Education</h2>
-                <div class="mb-4">
+                <div class="education-item">
                     <h3>Fırat University</h3>
                     <p><strong>BSc in Software Engineering</strong> | 2011-2016</p>
                     <p>Specialized in Software Engineering, Data Science, and Information Security.</p>

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    background: url('https://static.vecteezy.com/system/resources/previews/072/310/925/non_2x/futuristic-hud-interface-circles-on-dark-blue-background-technology-background-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cv-container {
+    background-color: rgba(10, 25, 47, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.4rem;
+    color: #00ffff;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #00ffff;
+    text-align: left;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.contact-info {
+    margin-top: 25px;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #00ffff;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffffff;
+}
+
+.contact-info p i {
+    margin-right: 15px;
+    color: #00ffff;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+ul.list-unstyled li {
+    background-color: rgba(0, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul.list-unstyled li:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+ul.list-unstyled li i {
+    color: #00ffff;
+    margin-right: 10px;
+}
+
+.experience-item, .education-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #00ffff;
+    transition: background-color 0.3s ease;
+}
+
+.experience-item:hover, .education-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.experience-item h3, .education-item h3 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.experience-item p, .education-item p {
+    margin-bottom: 5px;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #00ffff;
+}
+
+.social-links a {
+    color: #00ffff;
+    margin: 0 15px;
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #a0a0a0;
+}
+
+/* Animations */
+.cv-container > div, .cv-container > footer {
+    animation: fadeIn 1s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
