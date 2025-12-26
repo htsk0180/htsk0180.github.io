@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: #5c857d;
-    --secondary-color: #82a09a;
-    --background-color: #f4f6f5;
+    --primary-color: #81a1c1;
+    --secondary-color: #b4c5d8;
+    --background-color: #f0f2f5;
     --card-background-color: #ffffff;
-    --text-color: #495057;
-    --heading-color: #212529;
-    --border-color: rgba(92, 133, 125, 0.2);
+    --text-color: #546e7a;
+    --heading-color: #263238;
+    --border-color: rgba(129, 161, 193, 0.2);
 }
 
 body {
@@ -97,15 +97,15 @@ body {
     border-radius: 15px;
     max-width: 950px;
     margin: 50px auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
     border: 1px solid var(--border-color);
     text-align: center;
 }
 
 /* --- Header & Profile --- */
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.5rem;
@@ -114,7 +114,7 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 0.5rem;
@@ -122,7 +122,7 @@ h1 {
 }
 
 .lead {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
     font-weight: 300;
@@ -198,7 +198,7 @@ ul.list-unstyled {
 }
 
 ul.list-unstyled li {
-    background-color: rgba(92, 133, 125, 0.05);
+    background-color: rgba(129, 161, 193, 0.05);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 12px 18px;
@@ -208,7 +208,7 @@ ul.list-unstyled li {
 
 ul.list-unstyled li:hover {
     transform: translateY(-5px);
-    background-color: rgba(92, 133, 125, 0.1);
+    background-color: rgba(129, 161, 193, 0.1);
 }
 
 ul.list-unstyled li i {
@@ -284,5 +284,5 @@ footer {
 footer p {
     margin-top: 1.5rem;
     font-size: 0.9rem;
-    color: #8892b0;
+    color: var(--secondary-color);
 }
