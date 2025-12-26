@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: #5e7d9a;
-    --secondary-color: #9fb5ce;
-    --background-color: #f0f2f5;
+    --primary-color: #6a8dae;
+    --secondary-color: #9ab3cf;
+    --background-color: #f0f4f8;
     --card-background-color: #ffffff;
-    --text-color: #546e7a;
-    --heading-color: #263238;
-    --border-color: rgba(94, 125, 154, 0.2);
+    --text-color: #4a5a6a;
+    --heading-color: #2e3a46;
+    --border-color: rgba(106, 141, 174, 0.2);
 }
 
 body {
@@ -199,7 +199,7 @@ ul.list-unstyled {
 }
 
 ul.list-unstyled li {
-    background-color: rgba(94, 125, 154, 0.05);
+    background-color: rgba(106, 141, 174, 0.05);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 12px 18px;
@@ -209,7 +209,7 @@ ul.list-unstyled li {
 
 ul.list-unstyled li:hover {
     transform: translateY(-5px);
-    background-color: rgba(94, 125, 154, 0.1);
+    background-color: rgba(106, 141, 174, 0.1);
 }
 
 ul.list-unstyled li i {
@@ -219,7 +219,8 @@ ul.list-unstyled li i {
 
 .skill-details {
     font-size: 0.9em;
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    opacity: 0.9;
     margin-top: 8px;
     margin-bottom: 0;
     padding-left: 30px;
