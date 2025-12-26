@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: #00c6ff;
-    --secondary-color: #0072ff;
-    --background-color: #0a192f;
-    --card-background-color: rgba(10, 25, 47, 0.85);
-    --text-color: #c8d6e5;
-    --heading-color: #e2e8f0;
-    --border-color: rgba(0, 198, 255, 0.2);
+    --primary-color: #5c857d;
+    --secondary-color: #82a09a;
+    --background-color: #f4f6f5;
+    --card-background-color: #ffffff;
+    --text-color: #495057;
+    --heading-color: #212529;
+    --border-color: rgba(92, 133, 125, 0.2);
 }
 
 body {
@@ -35,7 +35,7 @@ body {
 }
 
 .spinner {
-    border: 4px solid rgba(255, 255, 255, 0.2);
+    border: 4px solid rgba(0, 0, 0, 0.1);
     border-left-color: var(--primary-color);
     border-radius: 50%;
     width: 50px;
@@ -74,10 +74,10 @@ body {
 
 .particle {
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 50%;
-    opacity: 0.6;
-    animation: float 10s infinite ease-in-out;
+    opacity: 0.3;
+    animation: float 15s infinite ease-in-out;
 }
 
 @keyframes float {
@@ -85,7 +85,7 @@ body {
         transform: translateY(0) translateX(0);
     }
     50% {
-        transform: translateY(-100px) translateX(50px);
+        transform: translateY(-120px) translateX(60px);
     }
 }
 
@@ -97,9 +97,8 @@ body {
     border-radius: 15px;
     max-width: 950px;
     margin: 50px auto;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
-    backdrop-filter: blur(8px);
     text-align: center;
 }
 
@@ -189,7 +188,7 @@ ul.list-unstyled {
 }
 
 ul.list-unstyled li {
-    background-color: rgba(0, 198, 255, 0.05);
+    background-color: rgba(92, 133, 125, 0.05);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 12px 18px;
@@ -199,7 +198,7 @@ ul.list-unstyled li {
 
 ul.list-unstyled li:hover {
     transform: translateY(-5px);
-    background-color: rgba(0, 198, 255, 0.1);
+    background-color: rgba(92, 133, 125, 0.1);
 }
 
 ul.list-unstyled li i {
