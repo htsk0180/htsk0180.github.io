@@ -206,6 +206,15 @@ ul.list-unstyled li i {
     margin-right: 12px;
 }
 
+.skill-details {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 30px;
+    font-style: italic;
+}
+
 /* --- Experience & Projects --- */
 .experience-item {
     background: transparent;
