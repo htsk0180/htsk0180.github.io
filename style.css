@@ -306,7 +306,7 @@ h3 {
 }
 
 .capability-card {
-    min-height: 210px;
+    min-height: 260px;
     padding: 24px;
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -541,6 +541,10 @@ h3 {
 
     .capability-grid {
         grid-template-columns: 1fr;
+    }
+
+    .capability-card {
+        min-height: 0;
     }
 
     .timeline::before {
