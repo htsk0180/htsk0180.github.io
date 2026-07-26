@@ -16,16 +16,39 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://htsk0180.github.io">
     <meta property="og:image" content="https://htsk0180.github.io/profile.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Halil Eroğlu | Digital Transformation Architect">
+    <meta name="twitter:description" content="Digital Transformation Architect focused on agentic AI, ERP automation, industrial IoT, managed agents, and production AI systems.">
+    <meta name="twitter:image" content="https://htsk0180.github.io/profile.jpeg">
 
     <link rel="canonical" href="https://htsk0180.github.io">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Halil Eroğlu",
+        "jobTitle": "Digital Transformation Architect",
+        "url": "https://htsk0180.github.io",
+        "image": "https://htsk0180.github.io/profile.jpeg",
+        "email": "mailto:siriusit2015@gmail.com",
+        "sameAs": [
+            "https://github.com/htsk0180/",
+            "https://tr.linkedin.com/in/htsk1920",
+            "https://orcid.org/0009-0008-8576-2771",
+            "https://independent.academia.edu/SIRIUSinformationtechnology"
+        ]
+    }
+    </script>
 </head>
 
-<body>
+<body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
         <a class="brand" href="#top" aria-label="Halil Eroğlu home">Halil Eroğlu</a>
         <nav class="nav-links" aria-label="Primary navigation">
@@ -36,7 +59,7 @@
         </nav>
     </header>
 
-    <main id="top">
+    <main id="main-content" tabindex="-1">
         <section class="hero">
             <div class="hero-content">
                 <p class="eyebrow">Digital Transformation Architect</p>
@@ -47,15 +70,14 @@
                 </p>
                 <div class="hero-actions">
                     <a class="button primary" href="mailto:siriusit2015@gmail.com">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         Contact
                     </a>
-                    <a class="button secondary" href="https://tr.linkedin.com/in/htsk1920" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-linkedin"></i>
-                        LinkedIn
+                    <a class="button secondary" href="#work">
+                        View selected work
                     </a>
-                    <a class="icon-button" href="https://github.com/htsk0180/" target="_blank" rel="noopener" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
+                    <a class="icon-button" href="https://github.com/htsk0180/" target="_blank" rel="noopener" aria-label="View GitHub profile (opens in a new tab)">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -103,27 +125,46 @@
 
             <div class="expertise-grid">
                 <article class="expertise-card">
-                    <div class="card-icon"><i class="fa-solid fa-code-branch"></i></div>
+                    <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-code-branch"></i></div>
                     <h3>Software Engineering</h3>
-                    <p>.NET Core, C#, ASP.NET, Python, C++, SOLID, layered architecture, design patterns, API design, Agentic Engineering, Harness Engineering, Memory Engineering, secure code review, and AI-assisted system integration.</p>
+                    <ul class="expertise-list">
+                        <li><strong>Core:</strong> .NET Core, C#, ASP.NET, Python, C++</li>
+                        <li><strong>Architecture:</strong> SOLID, layered architecture, design patterns, API design</li>
+                        <li><strong>AI engineering:</strong> Agentic Engineering, Harness Engineering, Memory Engineering</li>
+                        <li><strong>Delivery:</strong> secure code review and AI-assisted system integration</li>
+                    </ul>
                 </article>
 
                 <article class="expertise-card">
-                    <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-robot"></i></div>
                     <h3>AI &amp; Automation</h3>
-                    <p>LangChain, LangGraph, LangSmith, LangSmith Fleet, LangSmith Deployment/Agent Server, Claude Managed Agents, Claude Code subagents, OpenAI Codex app/cloud delegation, Gemini Enterprise Agent Platform, Vertex AI Agent Builder, ADK, MCP, A2A, HITL approvals, evals, tracing, and agent governance.</p>
+                    <ul class="expertise-list">
+                        <li><strong>Agent platforms:</strong> LangChain, LangGraph, LangSmith, LangSmith Fleet, LangSmith Deployment/Agent Server</li>
+                        <li><strong>Agent delivery:</strong> Claude Managed Agents, Claude Code subagents, OpenAI Codex app/cloud delegation</li>
+                        <li><strong>Enterprise AI:</strong> Gemini Enterprise Agent Platform, Vertex AI Agent Builder, ADK</li>
+                        <li><strong>Governance:</strong> MCP, A2A, HITL approvals, evals, tracing, agent governance</li>
+                    </ul>
                 </article>
 
                 <article class="expertise-card">
-                    <div class="card-icon"><i class="fa-solid fa-industry"></i></div>
+                    <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-industry"></i></div>
                     <h3>Industrial Systems</h3>
-                    <p>Industrial IoT, ERP automation, MES/MOM integration, MQTT, OPC UA, Moxa, PLC/SCADA data integration, edge gateways, sensor telemetry, real-time monitoring, machine data acquisition, OEE/KPI dashboards, alerting, and predictive maintenance workflows.</p>
+                    <ul class="expertise-list">
+                        <li><strong>Integration:</strong> Industrial IoT, ERP automation, MES/MOM integration, MQTT, OPC UA, Moxa</li>
+                        <li><strong>Data:</strong> PLC/SCADA data integration, edge gateways, sensor telemetry, machine data acquisition</li>
+                        <li><strong>Operations:</strong> real-time monitoring, OEE/KPI dashboards, alerting, predictive maintenance workflows</li>
+                    </ul>
                 </article>
 
                 <article class="expertise-card">
-                    <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-cloud-arrow-up"></i></div>
                     <h3>Platform Delivery</h3>
-                    <p>Azure, Docker, SQL Server, MySQL, REST/GraphQL APIs, microservices, event-driven integration, CI/CD, observability, secure secrets management, cloud-native deployment, enterprise connectors, and production rollout of AI-enabled legacy modernization.</p>
+                    <ul class="expertise-list">
+                        <li><strong>Foundation:</strong> Azure, Docker, SQL Server, MySQL, REST/GraphQL APIs</li>
+                        <li><strong>Architecture:</strong> microservices, event-driven integration, enterprise connectors</li>
+                        <li><strong>Operations:</strong> CI/CD, observability, secure secrets management, cloud-native deployment</li>
+                        <li><strong>Modernization:</strong> production rollout of AI-enabled legacy modernization</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -140,6 +181,7 @@
                     <div>
                         <h3>ERP Automation with Agentic AI</h3>
                         <p>Designed automation flows using LangChain, LangSmith, LangGraph, and n8n to streamline complex ERP operations with governed tool use.</p>
+                        <a class="work-link" href="https://github.com/htsk0180/" target="_blank" rel="noopener">View GitHub profile <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
                 <article class="work-item">
@@ -147,6 +189,7 @@
                     <div>
                         <h3>Digital Transformation Leadership</h3>
                         <p>Architected modern software processes and resilient systems to replace legacy workflows with secure, scalable, AI-ready platforms.</p>
+                        <a class="work-link" href="https://tr.linkedin.com/in/htsk1920" target="_blank" rel="noopener">View LinkedIn profile <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
                 <article class="work-item">
@@ -154,6 +197,7 @@
                     <div>
                         <h3>IoT &amp; MES/MOM Integration</h3>
                         <p>Integrated industrial devices and machine data pipelines for real-time monitoring, manufacturing analytics, and operational decision support.</p>
+                        <a class="work-link" href="https://github.com/htsk0180/" target="_blank" rel="noopener">View GitHub profile <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
             </div>
@@ -219,11 +263,11 @@
             <p>Digital Transformation Architect | Eskişehir, Türkiye</p>
         </div>
         <div class="footer-links">
-            <a href="mailto:siriusit2015@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://github.com/htsk0180/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://orcid.org/0009-0008-8576-2771" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
-            <a href="https://tr.linkedin.com/in/htsk1920" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://independent.academia.edu/SIRIUSinformationtechnology" target="_blank" rel="noopener" aria-label="Academia"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="mailto:siriusit2015@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://github.com/htsk0180/" target="_blank" rel="noopener" aria-label="GitHub (opens in a new tab)"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://orcid.org/0009-0008-8576-2771" target="_blank" rel="noopener" aria-label="ORCID (opens in a new tab)"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+            <a href="https://tr.linkedin.com/in/htsk1920" target="_blank" rel="noopener" aria-label="LinkedIn (opens in a new tab)"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://independent.academia.edu/SIRIUSinformationtechnology" target="_blank" rel="noopener" aria-label="Academia (opens in a new tab)"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
         </div>
         <p class="copyright">&copy; 2026 Halil Eroğlu. All rights reserved.</p>
     </footer>
